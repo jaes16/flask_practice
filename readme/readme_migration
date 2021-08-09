@@ -1,0 +1,3 @@
+we created a migration repository with the command "flask db init"
+we create a migration script with the command "flask db migrate", and can add "-m 'message'" to add a message, best to add what kind of changes are being made since the last migration
+"flask db upgrade" and "downgrade" will make the actual changes to the database. the changes that will be made can be checked with the file in migrations

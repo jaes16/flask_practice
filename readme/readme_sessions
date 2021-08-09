@@ -1,0 +1,4 @@
+Changes to a database are done in the context of a session, which can be accessed as db.session
+Changes to the database can be saved with db.session.commit(), or db.session.rollback() can be called to abort a session and remove all the changes within it
+Class objects can be added to the database by declaring it (ex. "User(username='...',...)") and adding it by calling db.session.add(). They can be deleted with db.session.delete()
+The objects can be queried with "Class_Name.query", with ".all()" for all objects of that class, and ".order_by(...).all" to get all the objects ordered in a manner specified

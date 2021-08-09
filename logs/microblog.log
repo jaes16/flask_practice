@@ -1,0 +1,36 @@
+2021-07-12 17:01:25,371 INFO: Microblog startup [in /Users/jaemahnsurh/Desktop/Coding/practice/flask_practice/app/__init__.py:58]
+2021-07-12 17:01:54,093 ERROR: Exception on / [GET] [in /usr/local/lib/python3.9/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Users/jaemahnsurh/Desktop/Coding/practice/flask_practice/app/routes.py", line 13, in main_page
+    return render_template('base.html', title='Home')
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/jaemahnsurh/Desktop/Coding/practice/flask_practice/app/templates/base.html", line 13, in top-level template code
+    <a href="{{ url_for('hi') }}">Hi</a>
+  File "/usr/local/lib/python3.9/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/usr/local/lib/python3.9/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/usr/local/lib/python3.9/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'hi'. Did you mean 'index' instead?
+2021-07-20 16:42:48,778 INFO: Microblog startup [in /Users/jaemahnsurh/Desktop/Coding/practice/flask_practice/app/__init__.py:90]
+2021-07-23 17:59:24,256 INFO: Microblog startup [in /Users/jaemahnsurh/Desktop/Coding/practice/flask_practice/app/__init__.py:90]
+2021-07-26 14:53:14,756 INFO: Microblog startup [in /Users/jaemahnsurh/Desktop/Coding/practice/flask_practice/app/__init__.py:90]
+2021-07-27 15:23:27,427 INFO: Microblog startup [in /Users/jaemahnsurh/Desktop/Coding/practice/flask_practice/app/__init__.py:90]
+2021-07-27 15:26:17,537 INFO: Microblog startup [in /Users/jaemahnsurh/Desktop/Coding/practice/flask_practice/app/__init__.py:90]
+2021-07-27 15:26:44,495 INFO: Microblog startup [in /Users/jaemahnsurh/Desktop/Coding/practice/flask_practice/app/__init__.py:90]
